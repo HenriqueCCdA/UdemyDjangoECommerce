@@ -2,6 +2,7 @@ services:
     mailhog:
         image: mailhog/mailhog
         ports:
+            - "1026:1025"
             - "8026:8025"
         logging:
             driver: none
